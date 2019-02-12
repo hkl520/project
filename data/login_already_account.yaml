@@ -1,0 +1,18 @@
+#test_login01:
+#   username: '13488834010'
+#   password: '159357li'
+#
+#test_login02:
+#   username: ' 13488834010'
+#   password: '159357li'
+#
+test_login03:
+   username: '13488834010 '
+   password: '159357li'
+   tag: 1
+
+test_login04:
+   username: '13488834010'
+   password: '159357li11'
+   tag: 0
+   except_data: '登录错误'

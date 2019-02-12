@@ -8,11 +8,14 @@ def init_driver(appPackage,appActivity):
     desired_caps['unicodeKeyboard'] = True
     desired_caps['resetKeyboard'] = True
 
+
     # 设备信息android不区分大小写
     desired_caps['platformName'] = 'Android'
 
     # 要跟测试手机版本对应
     desired_caps['platformVersion'] = '5.1'
+
+    desired_caps['automationName'] = 'Uiautomator2'
 
     # 设备名称值Android可以随便写
     desired_caps['deviceName'] = '192.168.56.101:5555'
